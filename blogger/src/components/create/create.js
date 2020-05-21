@@ -31,7 +31,7 @@ class create extends Component {
         }
         if (post.author.trim() !== '' && post.title.trim() !== '' && post.body.trim() !== '') {
             console.log(JSON.stringify(post))
-            fetch('http://localhost:5000/api/blogs/', {
+            fetch('https://polar-citadel-40500.herokuapp.com/api/blogs/', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

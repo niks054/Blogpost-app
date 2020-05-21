@@ -5,7 +5,7 @@ import './read.css'
 class read extends Component {
     constructor(props) {
         super(props);
-        fetch('http://localhost:5000/api/blogs/').then(res => res.json()).then(data => this.props.fetchpost(data))
+        fetch('https://polar-citadel-40500.herokuapp.com/api/blogs/').then(res => res.json()).then(data => this.props.fetchpost(data))
 
 
     }
