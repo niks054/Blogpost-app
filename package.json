@@ -1,0 +1,21 @@
+{
+  "name": "project-alpha",
+  "version": "1.0.0",
+  "description": "A Blogpost App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": " npm start --prefix blogger",
+    "dev": "concurrently  \"npm run server\" , \"npm run client\"",
+    "heroku-postbuild": "NPM-CONFIG-PRODUCTION=false npm install --prefix blogger && npm run build --prefix blogger"
+  },
+  "author": "Nishant Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "nodemon": "^2.0.4"
+  }
+}
